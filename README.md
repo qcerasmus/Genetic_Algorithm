@@ -1,4 +1,4 @@
-Generic Algorithm
+Genetic Algorithm
 =================
 
 This repo is something I wrote for fun that is based on a project we had to do in our first year of university. Basically you input a string and through randomization, the program eventually gets to your string.
