@@ -1,0 +1,4 @@
+[Project]
+Name=Genetic_Algorithm
+Manager=KDevCMakeManager
+VersionControl=kdevgit
