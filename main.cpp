@@ -12,7 +12,7 @@ bool compare(const Child& lhs, const Child& rhs) {
 }
 
 void print_best_child(const Child& best) {
-  cout << "The best child was: " << best.word << " with strength: " << best.strength << endl;
+  cout << "The best child was: \"" << best.word << "\" with strength: " << best.strength << endl;
 }
 
 void calculate_strength(Child& child, string user_input) {
@@ -27,9 +27,10 @@ void calculate_strength(Child& child, string user_input) {
 int main() {
   srand (time(NULL));
   
-  string user_input = "This sentence should be extremely long! 21236543";
+  // string user_input = "This sentence should be extremely long! 21236543";
   cout << "Please enter a word to guess: " << endl;
-  // cin >> user_input;
+  string user_input;
+  getline(cin, user_input);
   
   vector<Child> children = vector<Child>(100);
 
@@ -58,7 +59,5 @@ int main() {
     sort(children.begin() , children.end() , compare);
     print_best_child(children.at( 0 ));
   }
-  
-  cout << children.size() << endl;
   return 0;
 }
